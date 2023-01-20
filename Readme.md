@@ -1,0 +1,5 @@
+****Degree project iot solution****
+
+*I have developed an innovative solution to reduce unnecessary consumption of energy through the use of unique BLE tags with MAC addresses. Using a Raspberry Pi with built-in Bluetooth, it is possible to monitor and control the use of electrical equipment in the home depending on whether the BLE tag is in the home or not. The results of our tests show that it is possible to track the BLE tag from a Raspberry Pi up to 10-15 meters through walls. To improve user-friendliness, we have also implemented a Flask project that enables remote control of the equipment from any location with an internet connection. This provides the opportunity for further energy savings. This solution is relevant due to the increasing cost of electrical energy during the month of December compared to normal*
+
+**I have used Python, Flask, Javascript and HTML/CSS**

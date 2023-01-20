@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function turnOn() {
+  fetch('/on', { method: 'POST' });
+}
+function turnOff() {
+  fetch('/off', { method: 'POST' });
+}
+function setBrightness(level) {
+  fetch('/brightness/' + level, { method: 'POST' });
+}
+function changeColor() {
+    let r = document.getElementById("red").value;
+    let g = document.getElementById("green").value;
+    let b = document.getElementById("blue").value;
+    fetch('/color/' + r + '/' + g + '/' + b, { method: 'POST' });
+}
+</script>
+</head>
+<body>
+
+<h1>Light Control</h1>
+
+<button onclick="turnOn()">Turn On</button>
+<button onclick="turnOff()">Turn Off</button>
+<br>
+<input type="range" min="0" max="100" onchange="setBrightness(this.value)"/> <br>
+  <label>Red:</label>
+  <input type="number" min="0" max="255" id="red" value="255">
+  <label>Green:</label>
+  <input type="number" min="0" max="255" id="green" value="255">
+  <label>Blue:</label>
+  <input type="number" min="0" max="255" id="blue" value="255">
+  <button onclick="changeColor()">Change Color</button>
+</body>
+</html>
